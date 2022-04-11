@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# React Crypto App
 
 This project is a crypto app that fetches the top 100 crypotcurrencies from pro-api.coinmarketcap.com. Once you've opened the page click the GET DATA button to start. 
 Functions:
