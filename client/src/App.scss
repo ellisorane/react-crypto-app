@@ -1,0 +1,149 @@
+$sixty: #000505;
+$thirty: #16025b;
+$ten: #70edf6;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: $sixty;
+  color: white
+}
+
+.App {
+  text-align: center;
+  width: 80%;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.display {
+  margin: 50px 0
+}
+
+.searchDiv, .pinned, .singleCrypto {
+  width: 80%;
+}
+
+.searchDiv {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-size: 1.2rem;
+
+  input {
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 1.2rem;
+
+  }
+
+  div, input {
+    width: 100%;
+  }
+
+}
+
+.searchResults, input {
+  background-color: aliceblue;
+  color: #000505;
+}
+
+.searchResults {
+
+}
+
+.result {
+  list-style: none;
+  padding: 5px;
+
+  &:hover {
+    background-color: rgb(184, 201, 215);
+    cursor: pointer;
+  }
+}
+
+// Pinned 
+.pinned {
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 50px auto;
+}
+
+.singleCrypto, .btn {
+  margin: 10px auto;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+.singleCrypto {
+  display: flex;
+  justify-content: space-between;
+  background-color: $thirty;
+
+  &:hover {
+    background-color: #220295;
+  }
+}
+
+.pinnedCrypto {
+  background-color: #46036f;
+}
+
+.col1 {
+  text-align: left;
+}
+
+.col2 {
+  text-align: right;
+}
+
+.btn {
+  border: none;
+  font-weight: bold;
+  background-color: $ten;
+
+  &:hover {
+    background-color: #00cdd8;
+  }
+}
+
+.negative {
+  color: rgb(255, 73, 37);
+}
+
+.positive {
+  color: greenyellow;
+}
+
+.pinnedNotificationDiv {
+  color: black;
+  // text-transform: uppercase;
+  font-weight: bold;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.pinnedNotification {
+  background-color: $ten;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 100px;
+  transition: all 0.8s;
+  margin: 5px 0;
+}
+
+
+@media(max-width: 678px) {
+  .searchDiv, .pinned, .singleCrypto {
+    width: 100%;
+  }
+}
